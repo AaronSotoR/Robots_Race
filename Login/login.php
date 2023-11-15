@@ -73,6 +73,20 @@
     form button:hover {
       background-color: #45a049;
     }
+
+ .r_btn {
+      background-color: #1078ED;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
@@ -88,6 +102,10 @@
         <input type="password" id="password" name="password" required>
 
         <button type="submit" value="ingresar">Iniciar Sesión</button>
+        <br>
+        <br>
+        <button class="r_btn" type="submit" href="">Crear usuario</button>
+      </form>
       </form>
     </div>
   </div>
