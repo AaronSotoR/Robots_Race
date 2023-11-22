@@ -32,7 +32,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="zumo_robot.php">ZUMO-ROBOT</a></li>
-            <li><a class="dropdown-item" href="seguidor_L.php">SEGIDOR DE LINEA</a></li>
+            <li><a class="dropdown-item" href="seguidor_L.php">SEGUIDOR DE LINEA</a></li>
            
           </ul>
         </li>
