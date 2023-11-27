@@ -1,113 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Inicio de Sesión</title>
+  <!-- Agrega el enlace al archivo de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-    }
-
-    .container {
-      display: flex;
-      flex: 1;
-    }
+    /* Agrega tu estilo personalizado aquí si es necesario */
 
     .image-container {
-      flex: 1;
-      background: url('tu_imagen.jpg'); /* Reemplaza 'tu_imagen.jpg' con la URL o la ruta de tu imagen */
+      /* Ajusta el estilo según tus necesidades */
+      background: url('https://okeyqueretaro.mx/wp-content/uploads/2023/02/las-Ciencias.jpg');
       background-size: cover;
       background-position: center;
-      position: relative;
+      height: 100vh;
+      width: 75vh;
+      filter: blur(1px);
     }
 
     .form-container {
-      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 10px;
     }
 
     form {
-      max-width: 400px;
-      width: 100%;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: white;  
+      width: 300px;
     }
 
-    form h2 {
-      text-align: center;
-    }
-
-    form label {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    form input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    form button:hover {
-      background-color: #45a049;
-    }
-
- .r_btn {
-      background-color: #1078ED;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    form button:hover {
-      background-color: #45a049;
-    }
+    
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="image-container"></div>
-    <div class="form-container">
-      <form action="controlador_login.php" method="post">
-        <h2>Iniciar Sesión</h2>
-        <label for="username">Usuario:</label>
-        <input type="text" id="usuario" name="usuario" required>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 image-container">
+        <!-- Contenido de la imagen -->
+      </div>
+      <div class="col-md-4 form-container">
+        <form action="controlador_login.php" method="post">
+          <h2 class="text-center">Iniciar Sesión</h2>
 
-        <button type="submit" value="ingresar">Iniciar Sesión</button>
-        <br>
-        <br>
-        <button class="r_btn" type="submit" href="">Crear usuario</button>
-      </form>
-      </form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+          </div>
+
+          <button type="submit" class="btn btn-success btn-block">Iniciar Sesión</button>
+          <br>
+          <a href="#" class="btn btn-primary btn-block">Crear usuario</a>
+        </form>
+      </div>
     </div>
   </div>
+
+  <!-- Agrega el enlace al archivo de script de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
